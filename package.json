@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "dependencies": {
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.2",
-    "react-native-fbsdk": "^0.7.0"
+    "react-native-aws-cognito-js": "0.0.7",
+    "react-native-fbsdk": "^0.7.0",
+    "save": "^2.3.2"
   },
   "devDependencies": {
     "babel-jest": "22.4.1",
@@ -19,5 +22,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "aws-sdk": "2.177.0"
   }
 }
